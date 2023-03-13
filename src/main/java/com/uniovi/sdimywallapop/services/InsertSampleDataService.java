@@ -1,14 +1,11 @@
 package com.uniovi.sdimywallapop.services;
 
-import com.uniovi.sdimywallapop.entities.Conversation;
-import com.uniovi.sdimywallapop.entities.Message;
 import com.uniovi.sdimywallapop.entities.Offer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.Set;
 import com.uniovi.sdimywallapop.entities.User;
 

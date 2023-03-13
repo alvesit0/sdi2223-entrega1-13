@@ -6,12 +6,10 @@ import com.uniovi.sdimywallapop.repositories.OffersRepository;
 import com.uniovi.sdimywallapop.validators.OfferBuyValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 @Service
@@ -44,9 +42,7 @@ public class OffersService {
     }
 
     public Page<Offer> getOffersForUser(Pageable pageable, User user) {
-        Page<Offer> offers = new PageImpl<Offer>(new LinkedList<Offer>());
-        offers = offersRepository.findAllByUser(pageable, user);
-        return offers;
+        return offersRepository.findAllByUser(pageable, user);
     }
 
     public Page<Offer> searchOffersByTitle(Pageable pageable, String searchText) {

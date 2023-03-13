@@ -1,12 +1,6 @@
 package com.uniovi.sdimywallapop.pageobjects;
 
-import com.uniovi.sdimywallapop.util.SeleniumUtils;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
-
-import java.util.List;
 
 public class PO_PrivateView extends PO_NavView {
     static public void refactorLogging(WebDriver driver, String email, String password) {
